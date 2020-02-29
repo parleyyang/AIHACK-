@@ -1,0 +1,93 @@
+/* CSS Document */
+
+body {
+  background-color: #ED6A1A
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ED6A5A;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #black;
+  color: white;
+}
+
+
+
+
+
+.parent {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.image1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 750px;
+  width: 750px;
+}
+.image2 {
+  position: absolute;
+  top: 10px;
+  right: 145px;
+  height: 230px;
+  width: 165px;
+}
+.image3 {
+  position: absolute;
+  top: 10px;
+  right: 309px;
+  height: 230px;
+  width: 165px;
+}
+.image4 {
+  position: absolute;
+  top: 260px;
+  right: 60px;
+  width: 500px;
+  height:500px;
+}
+
+@media (max-width:1200px) {
+  #optionalstuff {
+    display: none;
+  }
+  #kep {
+      display: none;
+      /*position: absolute;
+        width: 500px;
+        height: 500px;
+        left: 10px;
+        bottom: 10px;*/
+  }
+}
