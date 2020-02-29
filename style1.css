@@ -1,4 +1,5 @@
 .view-first img {
+   float: left;
    -webkit-transition: all 0.2s linear;
    -moz-transition: all 0.2s linear;
    -o-transition: all 0.2s linear;
@@ -6,6 +7,7 @@
    transition: all 0.2s linear;
 }
 .view-first .mask {
+   float: left;
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
