@@ -1,3 +1,4 @@
+
 body{
   background:#ccff85;
 	color: #333;
@@ -8,6 +9,9 @@ a{
 	color: #fff;
 	text-decoration: none;
 }
+
+/* the team site */
+
 .clr{
 	clear: both;
 }
@@ -177,4 +181,105 @@ a{
    -o-transition-delay: 0.2s;
    -ms-transition-delay: 0.2s;
    transition-delay: 0.2s;
+}
+
+
+
+
+
+
+/* the project site */
+
+.plotly0 {
+  width: 675px;
+  height: 600px;
+  float: left;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+  border-radius: 10px;
+}
+
+.plotly1 {
+  width: 100%;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+
+
+
+/* tabs on the project site */
+/* Style the tab */
+.tab {
+  position: relative;
+  left: 10px;
+  width: 500px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #d6d2d2;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  text-align: center;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 59px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  position: relative;
+  left: 10px;
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+span {
+  color: red;
+  padding: 10px 24px;
 }

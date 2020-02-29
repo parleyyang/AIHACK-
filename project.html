@@ -8,7 +8,68 @@
     </head>
     <body>
 
-<iframe align="middle" width="675" height="600" frameborder="0" scrolling="no" src="https://chart-studio.plot.ly/~a977/5.embed"></iframe>
+
+      <div class="plotly0">
+        <div class="plotly1">
+            <iframe width="675" height="600" frameborder="0" scrolling="no" src="https://chart-studio.plot.ly/~a977/5.embed"></iframe>
+        </div>
+      </div>
+
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Cambridge')">Cambridge</button>
+        <button class="tablinks" onclick="openCity(event, 'Oxford')">Oxford</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>Luis and Anthony live here.</p>
+          <span onclick="this.parentElement.style.display='none'">Close</span>
+      </div>
+
+      <div id="Cambridge" class="tabcontent">
+        <h3>Cambridge</h3>
+        <p>Billy lives here.</p>
+          <span onclick="this.parentElement.style.display='none'">Close</span>
+      </div>
+
+      <div id="Oxford" class="tabcontent">
+        <h3>Oxford</h3>
+        <p>Parley lives here.</p>
+          <span onclick="this.parentElement.style.display='none'">Close</span>
+      </div>
+
+      <!-- source: https://www.w3schools.com/howto/howto_js_tabs.asp-->
+
+
+      <script type="text/javascript">
+      function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      </script>
+
+
+
 
     </body>
 </html>
