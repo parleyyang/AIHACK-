@@ -307,6 +307,7 @@ table * {
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
+  cursor: default;
 }
 
 /* Create an active/current tablink class */
@@ -325,6 +326,7 @@ table * {
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
+  cursor: default;
 }
 
 span {
