@@ -331,3 +331,15 @@ span {
   color: red;
   padding: 10px 24px;
 }
+
+/* Back button on the tab content */
+
+.button0{
+  position: absolute;
+  bottom: 10px;
+  background-color: #d6d2d2;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: default;
+}
