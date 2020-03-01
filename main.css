@@ -312,20 +312,29 @@ a{
 }
 
 table {
-  border-spacing: 1;
-  border-collapse: collapse;
+  table-layout: fixed ;
+  width: 100% ;
   background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
+  border: 1px black solid ;
+  border-collapse: collapse ;
+  margin: auto;
+  font-size: 15px;
+
+  text-align: center;
 }
-table * {
-  position: relative;
+tr:hover {
+  background-color: #c850c0;
 }
 
 
+.tabletop {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-size: 15px;
+  background-color: #4CAF50;
+  color: white;
+}
 
 /* tabs on the project site */
 /* Style the tab */
@@ -390,6 +399,19 @@ span {
   bottom: 10px;
   background-color: #d6d2d2;
   width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.button1{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #d6d2d2;
+  width: 150px;
+  height: 25px;
+  text-align: centre;
   text-align: center;
   border-radius: 10px;
   cursor: default;

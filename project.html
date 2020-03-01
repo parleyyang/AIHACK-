@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="main.css" />
     </head>
     <body>
-      
+
       <div class="plotly0">
         <div class="plotly1">
             <iframe width="675" height="600" frameborder="0" scrolling="no" src="https://chart-studio.plot.ly/~a977/5.embed"></iframe>
@@ -13,67 +13,98 @@
       </div>
 
 
-      <!-- Tab links -->
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Cambridge')">Cambridge</button>
-        <button class="tablinks" onclick="openCity(event, 'Oxford')">Oxford</button>
-      </div>
+      <table style="width: 40%;" border="1" >
+      <tbody>
+      <tr style="height: 21px;" class="tabletop">
+      <td style="height: 21px;">&nbsp;</td>
+      <td style="height: 21px;">&nbsp;CCG</td>
+      <td style="height: 21px;">&nbsp;Current Value</td>
+      <td style="height: 21px;">&nbsp;Expected % Change (Optimal)</td>
+      <td style="height: 21px;">&nbsp;Expected % Change (EoY)</td>
+      <td style="height: 21px;">&nbsp;Expected % Change (Pessimistic)</td>
+      </tr>
+      <tr style="height: 21px;">
+      <td style="height: 21px;">&nbsp;1</td>
+      <td style="height: 21px;">&nbsp;Darlington</td>
+      <td style="height: 21px;">&nbsp;1120</td>
+      <td style="height: 21px;">&nbsp;-6.26%</td>
+      <td style="height: 21px;">&nbsp;-1.38%</td>
+      <td style="height: 21px;">&nbsp;0.75%</td>
+      </tr>
+      <tr style="height: 21px;">
+      <td style="height: 21px;">&nbsp;2</td>
+      <td style="height: 21px;">&nbsp;S. Lincolnshire</td>
+      <td style="height: 21px;">&nbsp;1165</td>
+      <td style="height: 21px;">&nbsp;-7.64%</td>
+      <td style="height: 21px;">&nbsp;-4.88%</td>
+      <td style="height: 21px;">&nbsp;1.73%</td>
+      </tr>
+      <tr style="height: 21px;">
+      <td style="height: 21px;">&nbsp;3</td>
+      <td style="height: 21px;">&nbsp;Southend</td>
+      <td style="height: 21px;">&nbsp;1993</td>
+      <td style="height: 21px;">&nbsp;-11.33%</td>
+      <td style="height: 21px;">&nbsp;-4.73%</td>
+      <td style="height: 21px;">&nbsp;1.87%</td>
+      </tr>
+      <tr style="height: 21px;">
+      <td style="height: 21px;">&nbsp;...</td>
+      <td style="height: 21px;">&nbsp;...</td>
+      <td style="height: 21px;">&nbsp;...</td>
+      <td style="height: 21px;">&nbsp;...</td>
+      <td style="height: 21px;">&nbsp;...</td>
+      <td style="height: 21px;">&nbsp;...</td>
+      </tr>
+      <tr style="height: 21px;">
+      <td style="height: 21px;">&nbsp;166</td>
+      <td style="height: 21px;">&nbsp;Milton Keynes</td>
+      <td style="height: 21px;">&nbsp;1712</td>
+      <td style="height: 21px;">&nbsp;-37.66%</td>
+      <td style="height: 21px;">&nbsp;-2.07%</td>
+      <td style="height: 21px;">&nbsp;33.52%</td>
+      </tr>
+      <tr style="height: 21px;">
+      <td style="height: 21px;">&nbsp;167</td>
+      <td style="height: 21px;">&nbsp;N.E. Essex</td>
+      <td style="height: 21px;">&nbsp;3601</td>
+      <td style="height: 21px;">&nbsp;-43.18%</td>
+      <td style="height: 21px;">&nbsp;1.20%</td>
+      <td style="height: 21px;">&nbsp;45.58%</td>
+      </tr>
+      <tr style="height: 21px;">
+      <td style="height: 21px;">&nbsp;168</td>
+      <td style="height: 21px;">&nbsp;E38000012</td>
+      <td style="height: 21px;">&nbsp;2348</td>
+      <td style="height: 21px;">&nbsp;-82.34%</td>
+      <td style="height: 21px;">&nbsp;-4.64%</td>
+      <td style="height: 21px;">&nbsp;73.06%</td>
+      </tr>
+      </tbody>
+      </table>
+      <!-- DivTable.com -->
 
-      <!-- Tab content -->
-      <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>Luis and Anthony live here.</p>
-          <span onclick="this.parentElement.style.display='none'">Close</span>
-      </div>
-
-      <div id="Cambridge" class="tabcontent">
-        <h3>Cambridge</h3>
-        <p>Billy lives here.</p>
-          <span onclick="this.parentElement.style.display='none'">Close</span>
-      </div>
-
-      <div id="Oxford" class="tabcontent">
-        <h3>Oxford</h3>
-        <p>Parley lives here.</p>
-          <span onclick="this.parentElement.style.display='none'">Close</span>
-      </div>
-
-      <!-- source: https://www.w3schools.com/howto/howto_js_tabs.asp-->
-
-
-      <script type="text/javascript">
-      function openCity(evt, cityName) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
-
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-      }
-      </script>
 
       <div class="button0">
         <button0 onclick="goBack()">Go Back</button0>
+      </div>
+
+      <div class="button1">
+        <button1 onclick=" window.open('https://parleyyang.github.io/AIHACK_pres.pdf','_blank')">Methodology</button1>
       </div>
 
       <script>
       function goBack() {
         window.history.back();
       }
+
       </script>
+
+      <script>
+      window.open(
+        'https:http://google.com',
+  '_blank' // <- This is what makes it open in a new window.
+    );
+    </script>
 
     </body>
 </html>
